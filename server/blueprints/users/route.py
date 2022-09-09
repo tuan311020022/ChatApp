@@ -20,5 +20,19 @@ def register():
         }
         status = HTTPStatus.INTERNAL_SERVER_ERROR
     return jsonify(content),status
+
+@user.route('/login' , methods = ['POST'])
+def login():
+    try:
+        result = user_ctrl.login()
+        content = result
+        status = HTTPStatus.OK
+    except Exception as ex:
+        content = {
+            "error" : str(ex)
+        }
+        status = HTTPStatus.INTERNAL_SERVER_ERROR
+    return jsonify(content),status
+    
  
         

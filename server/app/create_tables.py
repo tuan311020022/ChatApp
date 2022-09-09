@@ -6,7 +6,8 @@ metadata = MetaData()
 
 users = Table("users" ,metadata,
     Column("user_id" , Integer , primary_key = True),
-    Column("password" , String)
+    Column("user_name" , String(40)),
+    Column("password" , String(40))
 )
 
 metadata.create_all(engine)
