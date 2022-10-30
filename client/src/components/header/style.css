@@ -5,10 +5,13 @@
 }
 li {
     padding-top: 16px;
-    color: white;
+    color: black;
+}
+.header{
+    height: 20%;
 }
 ui :hover {
-    background-color: #CC00CC;
+    background-color: rgba(fff, fff, fff, 0.5);
     color: black;
     height: 44px;
 }

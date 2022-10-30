@@ -2,3 +2,12 @@
     background-image: url("../components/header/img/back.jpg");
     background-size: 100%;
 }
+.background-footer {
+    background-image: url("../components/footer/img/back.png");
+    background-size: 100%;
+    min-height: 10%;
+    width: 100%;
+}
+.layout {
+    height: 1080px;
+}
