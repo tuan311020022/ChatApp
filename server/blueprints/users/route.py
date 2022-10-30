@@ -33,6 +33,10 @@ def login():
         }
         status = HTTPStatus.INTERNAL_SERVER_ERROR
     return jsonify(content),status
+
+@user.route('/run' , methods=['POST'])
+def run():
+    compile()
     
  
         

@@ -1,5 +1,5 @@
 # External library
-from flask import Flask,render_template
+from flask import Flask, jsonify
 from flask_jwt_extended import JWTManager
 from blueprints.users.route import user
 
@@ -16,7 +16,7 @@ def create_app():
 
     @app.route('/')
     def hello_world():
-        return render_template('./home/home.html')
+        return jsonify({'hello' : "hello"})
 
 
     return app
